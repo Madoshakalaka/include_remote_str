@@ -1,0 +1,23 @@
+[package]
+name = "include_remote_str"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+proc-macro=true
+
+[dependencies]
+proc-macro2 = "1.0"
+quote = "1.0"
+syn = {version="2.0", features=["parsing"]}
+serde_json = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+once_cell = "1.20"
+http-cache-reqwest = "0.14.0"
+reqwest = { version = "0.12.9", features = [] }
+reqwest-middleware = "0.3.3"
+tokio = { version = "1.9", features = ["rt-multi-thread"] }
+futures = "0.3.31"
+
