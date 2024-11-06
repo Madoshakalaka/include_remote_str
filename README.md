@@ -1,4 +1,4 @@
-# include-remote-str
+# include_remote_str!()
 
 A Rust procedural macro that allows you to include remote text content at compile time, with built-in caching support.
 
